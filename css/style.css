@@ -113,7 +113,7 @@ header .navbar a:hover {
   display: flex;
   align-items: center;
   background-color: var(--bg-color);
-  background: url(/images/fondo.jpg) no-repeat;
+  background: url(/images/fondo.webp) no-repeat;
   background-size: cover;
   background-position: right center;
   opacity: .8;
