@@ -1026,9 +1026,17 @@ form textarea {
     padding: 50px 26px;    
   }
 
+  .portfolio{
+    margin: 472px 0px 0px 52px;
+  }
+
   .portfolio-content {    
     margin-left: 14px;    
   }
+
+  .copyright {
+    width: 523px;    
+}
 
 }
 
