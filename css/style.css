@@ -473,7 +473,7 @@ header .navbar a:hover {
 
 @media (max-width: 1024px) {
   .home {
-    background: url(/images/fondo.webp) no-repeat;
+    background: url(../images/fondoMobil.webp) no-repeat;
     min-height: 71vh;
   }
 
@@ -868,7 +868,6 @@ form textarea {
 
   .home {
     background: url(/images/fondoMobil.webp) no-repeat;
-    width: 100%;
   }
 
   .about-img img {
@@ -920,6 +919,10 @@ form textarea {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
+  .home {
+    background: url(/images/fondoMobil.webp) no-repeat;
+  }
+
   .navbar a {
     margin: 1rem;
     padding: 1.5rem;
@@ -942,7 +945,7 @@ form textarea {
 
   .social {
     bottom: 19px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
 }
@@ -989,11 +992,6 @@ form textarea {
     width: 113%;
     min-height: 100vh;
   }
-
-  .info-box i {
-    margin-left: 4px;
-  }
-
 }
 
 @media (max-width: 360px) {
@@ -1008,4 +1006,5 @@ form textarea {
   .about-text {
     margin-top: 1rem;
   }
+  
 }
