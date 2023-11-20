@@ -42,11 +42,11 @@ function openLink(event, link) {
 const NetflixUrl = "https://jhonmanuelg.github.io/Netflix-Landing-Page-Website/";
 const NetfliGit = "https://github.com/jhonmanuelg/Netflix-Landing-Page-Website";
 
-const crudUrl = "https://jhonmanuelg.github.io/Operaciones_CRUD_JavaScript/" 
-const CrudGit = "https://github.com/jhonmanuelg/Operaciones_CRUD_JavaScript"
+const crudUrl = "https://jhonmanuelg.github.io/Operaciones_CRUD_JavaScript/"; 
+const CrudGit = "https://github.com/jhonmanuelg/Operaciones_CRUD_JavaScript";
 
-const PageUrl = "https://jhonmanuelg.github.io/Landing_Page_using_Bootstrap_5/"
-const PageGit = "https://github.com/jhonmanuelg/Landing_Page_using_Bootstrap_5"
+const PageUrl = "https://jhonmanuelg.github.io/Landing_Page_using_Bootstrap_5/";
+const PageGit = "https://github.com/jhonmanuelg/Landing_Page_using_Bootstrap_5";
 
 // evento clink projeto
 function projetLink(event, link) {
