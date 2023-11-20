@@ -69,6 +69,7 @@ header {
   background: var(--bg-color);
   padding: 18px 100px;
   box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
 }
 
 .logo {
@@ -97,7 +98,6 @@ header {
 header .navbar a:hover {
   background: var(--primary);
   color: #FFFFFF;
-
 }
 
 #menu-icon {
@@ -119,7 +119,7 @@ header .navbar a:hover {
   background: url(../images/header.webp) no-repeat;
   background-size: cover;
   background-position: right center;
-  opacity: .8;
+  transition: all 0.5s;
 }
 
 .home-text {
@@ -169,6 +169,7 @@ header .navbar a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: all 0.5s;
 }
 
 .about-img {
@@ -211,12 +212,14 @@ header .navbar a:hover {
 .skills {
   width: 100%;
   min-height: 100vh;
+  transition: all 0.5s;
 }
 
 .heading {
   display: flex;
   justify-content: center;
   padding: 1.4rem 0;
+  transition: all 0.5s;
 }
 
 .heading h1 {
@@ -229,6 +232,7 @@ header .navbar a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: all 0.5s;
 }
 
 .skills-conte {
@@ -239,7 +243,7 @@ header .navbar a:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
+  transition: all 0.5s;
 }
 
 .skills-educ {
@@ -251,6 +255,7 @@ header .navbar a:hover {
   justify-content: center;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--primary);
+  transition: all 0.5s;
 }
 
 .skills-educ h2 {
@@ -345,6 +350,7 @@ header .navbar a:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  transition: all 0.5s;
 }
 
 .p-box {
@@ -414,6 +420,7 @@ header .navbar a:hover {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  transition: all 0.5s;
 }
 
 .contact-info {
@@ -536,6 +543,7 @@ header .navbar a:hover {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  transition: all 0.5s;
 }
 
 .skills-conte {
@@ -649,6 +657,7 @@ header .navbar a:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  transition: all 0.5s;
 }
 
 .p-box {
@@ -699,6 +708,7 @@ header .navbar a:hover {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  transition: all 0.5s;
 }
 
 .contact-info {
@@ -710,7 +720,6 @@ header .navbar a:hover {
   bottom: 24px;
   display: flex;
   align-items: center;
-
 }
 
 .info-box {
@@ -745,6 +754,7 @@ header .navbar a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 .img-gif {
