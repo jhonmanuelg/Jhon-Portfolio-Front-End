@@ -12,6 +12,7 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
+
 // función de WhatsApp
 function contactarPorWhatsApp() {
     // Número de teléfono en el formato internacional
