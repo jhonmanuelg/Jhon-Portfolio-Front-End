@@ -803,7 +803,9 @@ form textarea {
 .copyright {
   padding: 20px;
   text-align: center;
-  background: var(--primary);
+  color:  var(--primary);
+  background: var(--bg-color);
+  font-weight: 600;
 }
 
 /*---------------- Responsive -----------------------*/
