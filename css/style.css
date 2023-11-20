@@ -473,29 +473,6 @@ header .navbar a:hover {
 
 /*-------------------------- Fin contact -----------------------*/
 
-/* Making Responsive */
-
-@media (max-width: 1024px) {
-  .home {
-    background: url(../images/fondoMobil.webp) no-repeat;
-    min-height: 71vh;
-  }
-
-}
-
-@media (max-width: 991px) {
-  header {
-    padding: 15px 80px;
-  }
-
-
-
-  section {
-    padding: 50px 80px;
-  }
-
-  ;
-}
 
 .about {
   width: 100%;
@@ -819,7 +796,8 @@ form textarea {
   background: var(--primary);
 }
 
-/* Making Responsive */
+/*---------------- Responsive -----------------------*/
+
 
 @media (max-width: 1024px) {
   .home {
