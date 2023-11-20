@@ -52,7 +52,9 @@ html {
 
 section {
   padding: 50px 100px;
+  transition: all 0.5s;
 }
+
 /*----------------- header ------------------*/
 header {
   position: fixed;
@@ -103,6 +105,7 @@ header .navbar a:hover {
   cursor: pointer;
   display: none;
 }
+
 /*----------------- Fin header ------------------*/
 /*------------- Home --------------------*/
 .home {
@@ -201,6 +204,7 @@ header .navbar a:hover {
   text-align: justify;
   font-weight: 300;
 }
+
 /*------------- Fin Home --------------------*/
 
 /*--------------------------Skills-----------------------*/
@@ -554,6 +558,7 @@ header .navbar a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .skills-conte {
@@ -819,7 +824,11 @@ form textarea {
 @media (max-width: 1024px) {
   .home {
     background: url(/images/fondoMobil.webp) no-repeat;
-    min-height: 71vh;
+    min-height: 58vh;
+  }
+
+  .about {
+    min-height: 33vh;
   }
 
 }
@@ -829,10 +838,16 @@ form textarea {
     padding: 15px 80px;
   }
 
-
+  .home {
+    min-height: 59vh;
+  }
 
   section {
     padding: 50px 80px;
+  }
+
+  .about {
+    min-height: 40vh;
   }
 
   .about-text {
@@ -977,10 +992,25 @@ form textarea {
 
 }
 
+
+@media (max-width: 540px) {
+  .skills-conte {
+    margin-left: 15px;
+  }
+
+
+}
+
 @media (max-width: 412px) {
+  .home {
+    width: 127%;
+    min-height: 88vh;
+  }
+
   .skills-conte {
     width: 473px;
     height: 971px;
+    margin-left: -11px;
   }
 
   .skills-educ {
@@ -988,10 +1018,18 @@ form textarea {
     margin: 15px 24px 0px 0px;
   }
 
-  .home {
-    width: 113%;
-    min-height: 100vh;
+  .about {
+    margin-left: 53px;
   }
+
+  section {
+    padding: 50px 26px;    
+  }
+
+  .portfolio-content {    
+    margin-left: 14px;    
+  }
+
 }
 
 @media (max-width: 360px) {
@@ -1006,5 +1044,5 @@ form textarea {
   .about-text {
     margin-top: 1rem;
   }
-  
+
 }
