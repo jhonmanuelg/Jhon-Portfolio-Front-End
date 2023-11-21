@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icons.webp" type="image/x-icon">
-    <title>Responsive Portfolio Website</title>
+    <title>Portfolio Front End</title>
     <!-- Link To CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="eventoMenu/openLink.js"></script>
 </head>
 
 <body>
@@ -44,7 +46,7 @@
                     <i class="fab fa-linkedin"></i>
                 </a>
 
-                <a href="#" onclick="openLink(event, twitterURL)" target="_blank">
+                <a href="#" onclick="openLink(event, twitterUR)" target="_blank">
                     <i class="fab fa-twitter" target="_blank"></i>
                 </a>
 
@@ -236,21 +238,21 @@
         <div class="portfolio-content">
             <div class="p-box">
                 <div class="p-img">
-                    <a href="#" target="_blank" onclick="projetLink(event, NetflixUrl)">
+                    <a href="#" target="_blank" onclick="projectLink(event, netflixUrl)">
                         <img src="images/Netflix_Landing.webp" alt="Portado de Netflix">
                     </a>
                 </div>
                 <h2>Projeto Netflix Landing</h2>
                 <p>È uma página web que busca replicar o layout e estilo visual da página
                     utiliza HTML e CSS para criar uma interface atrativa e responsiva.</p>
-                <a href="#" target="_blank" onclick="projetLink(event, NetfliGit)">
+                <a href="#" target="_blank" onclick="projectLink(event, netflixGit)">
                     <i class="fab fa-github"></i>
                 </a>
 
             </div>
             <div class="p-box">
                 <div class="p-img">
-                    <a href="#" target="_blank" onclick="projetLink(event, crudUrl)">
+                    <a href="#" target="_blank" onclick="projectLink(event, crudUrl)">
                         <img src="images/CRUD.webp" alt="portada opereraçõe CRUD">
                     </a>
 
@@ -261,14 +263,14 @@
                     (Create, Read, Update, Delete) com HTML, CSS e JavaScript é uma ótima
                     oportunidade para praticar habilidades de desenvolvimento web.
                 </p>
-                <a href="#" target="_blank" onclick="projetLink(event, CrudGit)">
+                <a href="#" target="_blank" onclick="projectLink(event, crudGit)">
                     <i class="fab fa-github"></i>
                 </a>
 
             </div>
             <div class="p-box">
                 <div class="p-img">
-                    <a href=""  target="_blank" onclick="projetLink(event, PageUrl)">
+                    <a href=""  target="_blank" onclick="projectLink(event, pageUrl)">
                         <img src="images/Landing_Page.webp" alt="Landing pagen de projeto">
                     </a>
                 </div>
@@ -278,7 +280,7 @@
                     página inicial responsiva utilizando o framework Bootstrap 5.
 
                 </p>
-                <a href="#" target="_blank" onclick="projetLink(event, PageGit)">
+                <a href="#" target="_blank" onclick="projectLink(event, pageGit)">
                     <i class="fab fa-github"></i>
                 </a>
 
@@ -336,7 +338,7 @@
     </div>
 
     <!-- Link To JS -->
-    <script src="mainJs/main.js"></script>
+    <script src="eventoMenu/menu.js"></script>
 
 </body>
 
