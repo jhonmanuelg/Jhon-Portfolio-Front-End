@@ -1,3 +1,19 @@
+function ejemploAsync() {
+  return new Promise((resolve, reject) => {
+      // Simulación de operación asincrónica
+      setTimeout(() => {
+          // Éxito
+          resolve("¡Operación completada!");
+
+          // O error
+          // reject("Hubo un error");
+      }, 1000);
+  });
+}
+
+// Uso de la Promesa
+
+
 // función menu responsibo
 
 let menu = document.querySelector("#menu-icon");
@@ -59,9 +75,15 @@ function projetLink(event, link) {
 
    
   
-
   
-  
+ // Usando el ejemploAsync con .then y .catch
+ejemploAsync()
+.then(result => {
+   console.log(result);
+})
+.catch(error => {
+   console.error(error);
+});
 
   
   
