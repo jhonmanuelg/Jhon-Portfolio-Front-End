@@ -15,7 +15,9 @@ function contactarPorWhatsApp() {
 // link para abrir las paginas en otra ventana redes sociales
 const githubURL = "https://github.com/jhonmanuelg";
 const twitterURL = "https://twitter.com/JhonManuelGil2";
+const  discordURL = "https://discord.com/users/835269507663659048";
 const linkedinURL = "https://www.linkedin.com/in/jhon-manuel-gil/";
+
 
 // evento click redes sociales
 function openLink(event, link) {
