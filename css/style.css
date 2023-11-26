@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 *::selection {
-  background-color: #FE920B;
+  background-color: #fe920b;
   color: #000000;
 }
 
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
   /* Colors */
   --bg-color: #ffffff;
   --primary: #fe9d0b;
-  --hover: #1D1C34;
+  --hover: #1d1c34;
 
   /* Fonts */
   --h1-font: 2.2rem;
@@ -51,6 +51,7 @@ html {
 }
 
 section {
+  width: 100%;
   padding: 50px 100px;
   transition: all 0.5s;
 }
@@ -97,7 +98,7 @@ header {
 
 header .navbar a:hover {
   background: var(--primary);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #menu-icon {
@@ -113,28 +114,38 @@ header .navbar a:hover {
   width: 100%;
   min-height: 100vh;
   color: #ffffff;
-  display: flex;
-  align-items: center;
-  background-color: #2c3e50;
-  background: url(../images/fondoMobil.webp) no-repeat;
+  background-image: url(../images/fondoMobil.webp);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: right center;
+  background-attachment: fixed;
   transition: all 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.hom_div {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .home-text {
-  max-width: 50%; 
+  max-width: 70%;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 2%; 
+  border-radius: 2%;
   padding: 20px;
-  margin-top: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-text h1 {
+  margin-top: 2rem;
   font-size: var(--h1-font);
+  text-align: center;
   letter-spacing: var(--spacing);
 }
 
@@ -151,9 +162,7 @@ header .navbar a:hover {
 .home-text p {
   font-size: var(--p-font);
   margin-bottom: var(--m-4);
-  line-height: 22px;
-  max-width: 71%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .btn {
@@ -164,23 +173,24 @@ header .navbar a:hover {
 }
 
 .btn:hover {
-  background: #DAD5F3;
+  background: #dad5f3;
   color: var(--primary);
-  ;
 }
 
+/* =======================   ================ */
 .about {
   width: 100%;
-  min-height: 84vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   transition: all 0.5s;
 }
 
 .about-img {
-  width: 44%;
-
+  width: 34%;
+  margin: 39px;
 }
 
 .about-img img {
@@ -243,19 +253,19 @@ header .navbar a:hover {
 }
 
 .skills-conte {
-  width: 983px;
+  width: 86%;
   height: 600px;
   margin-top: 6rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   transition: all 0.5s;
 }
 
 .skills-educ {
   width: 223px;
-  height: auto;
+  height: 97px;
   margin: 0px 24px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -274,7 +284,6 @@ header .navbar a:hover {
   margin-top: 1.5px;
   font-size: 11px;
   font-weight: 400;
-
 }
 
 .skills-educ h3 {
@@ -299,54 +308,17 @@ header .navbar a:hover {
 }
 
 .skills-box {
-  position: relative;
-  background: #2c3e50;
-  margin: 1rem 0;
-  height: 3.4rem;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
-  border-radius: 10px;
 }
 
 .skills-box i {
   display: flex;
   align-items: center;
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 50px;
   color: var(--primary);
-}
-
-.skills-box h3 {
-  margin-left: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.percent-bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: var(--primary);
-  height: 0.34rem;
-  border-radius: 10px;
-}
-
-.html-bar {
-  width: 94%;
-}
-
-.css-bar {
-  width: 84%;
-}
-
-.js-bar {
-  width: 30%;
-}
-
-.ux-bar {
-  width: 60%;
 }
 
 /*-------------------------- Fin Skills-----------------------*/
@@ -430,7 +402,6 @@ header .navbar a:hover {
   transition: all 0.5s;
 }
 
-
 .social {
   position: relative;
   bottom: 24px;
@@ -448,6 +419,7 @@ header .navbar a:hover {
   width: 419px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 1rem 0;
 }
 
@@ -458,126 +430,62 @@ header .navbar a:hover {
 }
 
 .info-box i:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.contact-gif{
+.contact-gif {
   width: 350px;
- }
+}
 .img-gif {
-  border-radius: 3px;
   width: 100%;
-  border:  2px solid var(--primary);
+  border: 2px solid var(--primary);
   border-radius: 2%;
 }
 
 .copyright {
   padding: 20px;
   text-align: center;
-  color:  var(--primary);
+  color: var(--primary);
   background: var(--bg-color);
   font-weight: 600;
 }
 
-
 /*-------------------------- Fin contact -----------------------*/
-
 
 /*---------------- Responsive -----------------------*/
 
-
-@media (max-width: 1024px) {
-  .home {
-    background: url(/images/fondoMobil.webp) no-repeat;
-    min-height: 58vh;
-  }
-
-  .about {
-    min-height: 33vh;
-  }
-
-}
-
-@media (max-width: 991px) {
-  header {
-    padding: 15px 80px;
-  }
-
-  .home {
-    min-height: 59vh;
-  }
-
-  section {
-    padding: 50px 80px;
-  }
-
-  .about {
-    min-height: 40vh;
-  }
-
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 1199.98px) {
   .about-text {
-    max-width: 444px;
+    margin-bottom: 66px;
   }
-
   .about-img {
-    width: 300px;
-    height: 300px;
+    width: 60%;
+    margin: 39px;
   }
 
-  .skills-bars {
-    max-width: 420px;
+  .info-box {
+    width: 404px;
+    margin: 3rem 2rem;
   }
 
-  .skills-img {
-    width: 400px;
-    height: 300px;
-    margin-top: 6rem;
+  .skills {
+    min-height: 89vh;
+  }
+  .contact-gif {
+    width: 278px;
+  }
+
+  .skills-educ {
+    width: 217px;
   }
 }
 
-@media (max-width: 820px) {
-  :root {
-    --h1-font: 2rem;
-    --h2-font: 1rem;
-    --m-4: 1.4rem;
-  }
-
-  header {
-    padding: 13px 65px;
-  }
-
-  .home {
-    background: url(/images/fondoMobil.webp) no-repeat;
-  }
-
-  .about-img img {
-    width: 119%;
-  }
-
-  section {
-    padding: 50px 65px;
-  }
-
-  .about {
-    flex-direction: column;
-  }
-
-  .about-img {
-    width: 240px;
-    height: 300px;
-  }
-
-  .p-box {
-    flex: 1;
-  }
-
-  .skills-content {
-    flex-direction: column;
-  }
-}
-
+/* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
   #menu-icon {
+    position: relative;
+    left: 57px;
     display: initial;
     color: #222435;
   }
@@ -597,10 +505,6 @@ header .navbar a:hover {
 
   header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-
-  .home {
-    background: url(/images/fondoMobil.webp) no-repeat;
   }
 
   .navbar a {
@@ -627,101 +531,122 @@ header .navbar a:hover {
     bottom: 19px;
     justify-content: flex-start;
   }
-
 }
 
-@media (max-width: 670px) {
-  header {
-    padding: 10px 34px;
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .home-text h1 {
+    font-size: 2rem;
   }
 
-  section {
-    padding: 50px 34px;
+  .home-text h2 {
+    font-size: 1.3rem;
   }
 
-  .skills-img {
-    width: 320px;
-  }
-
-  .skills-conte {
-    width: 473px;
+  .home-text p {
+    text-align: center;
   }
 
   .social {
-    margin-top: 34px;
+    justify-content: space-between;
   }
 
-  .contact-gif {
-    display: none;
-  }
-
-}
-
-
-@media (max-width: 540px) {
-  .skills-conte {
-    margin-left: 15px;
-  }
-
-
-}
-
-@media (max-width: 412px) {
-  .home {
-    width: 131%;
-    min-height: 84vh;
-  }
-
-  .skills{
-    margin-left: 56px;
+  .about-img {
+    width: 80%;
   }
   .skills-conte {
-    width: 473px;
-    height: 971px;
-    margin-left: -11px;
+    height: 1599px;
   }
 
   .skills-educ {
     width: 310px;
-    margin: 15px 24px 0px 0px;
+    height: 161px;
   }
 
-  .about {
-    margin-left: 53px;
+  .skills-educ h2 {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .skills-educ h3 {
+    font-size: 13px;
   }
 
-  section {
-    padding: 50px 26px;    
+  skills-educ p {
+    font-size: 16px;
   }
 
-  .portfolio{
-    margin: 0px 0px 0px 52px;
+  .info-box {
+    width: 100%;
   }
-
-  .portfolio-content {    
-    margin-left: 14px;    
-  }
-  .contact-content{
-    margin-left: 56px;
-  }
-
-  .copyright {
-    width: 523px;    
 }
+/* Xx-Small devices (portrait phones, less than 476px) * */
 
-}
+@media (max-width: 475.98px) {
+  .logo img {
+    display: none;
+  }
 
-@media (max-width: 360px) {
   .home-text {
-    max-width: 225px;
+    width: 377px;
   }
 
-  .skills-img {
-    width: 280px;
+  .skills {
+    width: 100%;
+    min-height: 100vh;
   }
 
-  .about-text {
-    margin-top: 1rem;
+  .about-img {
+    width: 30rem;
+  }
+  .about-img img {
+    width: 16rem;
   }
 
+  .skills-box i {
+    font-size: 35px;
+    margin: 16px;
+  }
+
+  .about-text p {
+    width: 20rem;
+  }
+
+  .skills-educ {
+    width: 263px;
+  }
+
+  .contact-content {
+    width: 327px;
+    position: relative;
+    display: block;
+    right: 89px;
+  }
+
+  .info-box p {
+    margin-left: 0px;
+  }
+
+  .skills-conte {
+    width: auto;
+  }
+
+  .contact-gif {
+    width: 12rem;
+    height: 13rem;
+    margin: 0px 0px 0px 99px;
+  }
+
+  .img-gif {
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 360.98px) {
+  .home-text {
+    width: 321px;
+  }
+  .contact-content {
+    right: 107x;
+  }
 }
