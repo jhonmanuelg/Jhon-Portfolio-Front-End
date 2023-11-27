@@ -162,6 +162,7 @@ header .navbar a:hover {
 }
 
 .home-text p {
+  text-align: justify;
   font-size: var(--p-font);
   margin-bottom: var(--m-4);
   font-weight: 400;
