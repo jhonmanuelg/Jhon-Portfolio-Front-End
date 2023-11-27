@@ -141,7 +141,7 @@ header .navbar a:hover {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.074);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(42px);
 }
 
 .home-text h1 {
@@ -553,9 +553,8 @@ header .navbar a:hover {
 
   .home-text {
     background-color: rgba(255, 255, 255, -87.926);
-    backdrop-filter: blur(59px);
   }
-  
+
   .home-text h1 {
     font-size: 2rem;
   }
