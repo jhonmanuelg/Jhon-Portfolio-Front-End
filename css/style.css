@@ -142,6 +142,7 @@ header .navbar a:hover {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.074);
   backdrop-filter: blur(42px);
+  border: 1px solid var(--primary);
 }
 
 .home-text h1 {
@@ -149,7 +150,10 @@ header .navbar a:hover {
   font-size: var(--h1-font);
   text-align: center;
   letter-spacing: var(--spacing);
+  animation: typing 4s steps(40) infinite;
 }
+
+
 
 .home-text span {
   color: var(--primary);
@@ -545,7 +549,7 @@ header .navbar a:hover {
 
   .social {
     bottom: 19px;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 

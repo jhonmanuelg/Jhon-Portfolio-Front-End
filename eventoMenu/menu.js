@@ -14,6 +14,11 @@ window.onscroll = () => {
 };
 
 
+  //libreria AOS EFECTO
+  AOS.init({
+    duration: 1000,
+    animatedClassName: 'aos-animate'
+});
 
 
 
