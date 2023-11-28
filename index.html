@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/icons.webp" type="image/x-icon">
     <title>Portfolio Front End</title>
     <!-- Link To CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -38,6 +39,7 @@
         <div class="hom_div">
             <div class="home-text">
                 <h1>Eu sou <br> <span>Jhon Manuel Gil</span>.</h1>
+                <br>
                 <h2>Front End Developer.</h2>
                 <p>
                     Tenho uma paixão ardente pelo universo da tecnológico que transcende qualquer dúvida. Minha
@@ -71,10 +73,10 @@
 
     <!-- About -->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-right">
             <img src="images/jhonGil.webp" alt="">
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-left">
             <h2>Sobre mim</h2>
             <h1>Jhon Manuel Gil</h1>
             <p>
@@ -86,9 +88,8 @@
                 habilidades importantes para uma oportunidade de estágio.
             </p>
             <p>
-                Atualmente, estou imersa no estudo da Ciência da Computação, na Universidade Cruzeiro do Sul, São
-                Paulo,
-                Brasil.
+                Atualmente, estou imersa no estudo Ciência da Computação, na Universidade Cruzeiro do Sul, São
+                Paulo SP - Brasil.
             </p>
             <a href="CV Jhon/Curriculum-Jhon.pdf" class="btn" target="_blank">Download CV</a>
         </div>
@@ -96,13 +97,13 @@
 
     <!-- Skills -->
     <section class="skills" id="skills">
-        <div class="heading">
+        <div class="heading" data-aos="fade-up">
             <h1>Skills</h1>
         </div>
         <!-- Content -->
         <div class="skills-content">
             <div class="skills-bars">
-                <div class="skills-text">
+                <div class="skills-text" data-aos="fade-up">
                     <h2>My Skills</h2>
                     <p>
                         Durante minha jornada de estudo, tive a oportunidade enriquecedora de participar dos cursos
@@ -114,28 +115,28 @@
                     </p>
 
                 </div>
-                <div class="skills-box">                    
-                    <i class="fab fa-html5"></i>               
-                    
-                    <i class="fab fa-css3"></i>                 
+                <div class="skills-box">
+                    <i class="fab fa-html5" data-aos="fade-right"></i>
 
-                    <i class="fab fa-bootstrap"></i>
-                    
-                    <i class="fab fa-js"></i>
+                    <i class="fab fa-css3" data-aos="fade-right" ></i>
 
-                    <i class="fab fa-react"></i>
+                    <i class="fab fa-bootstrap" data-aos="fade-up"></i>
+
+                    <i class="fab fa-js"  data-aos="fade-left"></i>
+
+                    <i class="fab fa-react" data-aos="fade-left"></i>
                 </div>
 
             </div>
             <!-- formacion -->
-            <div class="skills-conte">
+            <div class="skills-conte" data-aos="fade-up">
                 <div class="skills-educ">
                     <h2>Universidade Cruzeiro do Sul.</h2>
                     <p>
                         Bacharelado Ciência da Computação.
                     </p>
                     <h3>Lugar: São Paulo SP</h3>
-                    <h3>Data: 08/2023.</h3>
+                    <h3>Data: 08/2023 em Estudar</h3>
                 </div>
                 <div class="skills-educ">
                     <h2>Toti Diversidade.</h2>
@@ -216,13 +217,13 @@
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
 
-        <div class="heading">
+        <div class="heading" data-aos="fade-up">
             <h1>Portfolio</h1>
         </div>
 
         <!-- Content -->
         <div class="portfolio-content">
-            <div class="p-box">
+            <div class="p-box" data-aos="fade-right">
                 <div class="p-img">
                     <a href="#" target="_blank" onclick="projectLink(event, netflixUrl)">
                         <img src="images/Netflix_Landing.webp" alt="Portado de Netflix">
@@ -236,7 +237,7 @@
                 </a>
 
             </div>
-            <div class="p-box">
+            <div class="p-box" data-aos="fade-up">
                 <div class="p-img">
                     <a href="#" target="_blank" onclick="projectLink(event, crudUrl)">
                         <img src="images/CRUD.webp" alt="portada opereraçõe CRUD">
@@ -254,7 +255,7 @@
                 </a>
 
             </div>
-            <div class="p-box">
+            <div class="p-box" data-aos="fade-left">
                 <div class="p-img">
                     <a href="" target="_blank" onclick="projectLink(event, pageUrl)">
                         <img src="images/Landing_Page.webp" alt="Landing pagen de projeto">
@@ -276,12 +277,12 @@
 
     <!-- Contact -->
     <section class="contact" id="contact">
-        <div class="heading">
+        <div class="heading" data-aos="fade-up">
             <h1>CONTATO</h1>
         </div>
         <!-- Content -->
         <div class="contact-content">
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-right">
 
                 <div class="info-box">
                     <p>
@@ -310,7 +311,7 @@
                     </a>
                 </div>
             </div>
-            <div class="contact-gif">
+            <div class="contact-gif" data-aos="fade-left" data-aos="fade-left">
                 <img class="img-gif" src="./images/artistajhon.webp" alt="robot.gif">
             </div>
 
@@ -324,6 +325,8 @@
     </div>
 
 
+    <!-- libreria AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <!-- Link To JS -->
