@@ -162,6 +162,7 @@ header .navbar a:hover {
 }
 
 .home-text p {
+  text-align: justify;
   font-size: var(--p-font);
   margin-bottom: var(--m-4);
   font-weight: 400;
@@ -290,7 +291,7 @@ header .navbar a:hover {
 
 .skills-educ h3 {
   margin-top: 1.5px;
-  font-size: 9px;
+  font-size: 9.5px;
   font-weight: 300;
 }
 
