@@ -113,11 +113,12 @@ header .navbar a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  color: var(--bg-color);
-  background-image: url(../images/fondoMobil.webp);
+  background-color: rgb(1, 11, 11);
+  background-image: url(../images/pexels-aditya-singh.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   transition: all 0.3s;
   display: flex;
   align-items: center;
@@ -585,20 +586,16 @@ justify-content: space-between;
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .home-text {
-    background-color: rgba(255, 255, 255, -87.926);
+  .home-text{
+    background-color: rgba(255, 255, 255, -15.926);
+    backdrop-filter: blur(91px);
   }
-
   .home-text h1 {
     font-size: 2rem;
   }
 
   .home-text h2 {
     font-size: 1.3rem;
-  }
-
-  .home-text p {
-    text-align: center;
   }
 
   .social {
