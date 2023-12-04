@@ -197,7 +197,6 @@ header .navbar a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   transition: all 0.3s;
-  border: 1px solid rgb(0, 255, 234);
 }
 
 .about-img {
@@ -243,7 +242,6 @@ header .navbar a:hover {
   width: 100%;
   min-height: auto;
   transition: all 0.3s;
-  border: 1px solid rgb(255, 166, 0);
 }
 
 .heading {
@@ -350,10 +348,11 @@ header .navbar a:hover {
 
 /*-------------------------- Portfolio-----------------------*/
 .portfolio{
-  border: 1px solid red;
   width: 100%;
   height: auto;
 }
+
+
 .portfolio-content {
   display: flex;
   align-items: center;
