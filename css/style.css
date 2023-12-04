@@ -79,6 +79,7 @@ header {
 
 .logo img {
   width: 100px;
+  height: 36px;
   border: 3px solid var(--primary);
   border-radius: 2px;
 }
@@ -116,7 +117,7 @@ header .navbar a:hover {
   width: 100%;
   min-height: 100vh;
   background-color: rgb(1, 11, 11);
-  background-image: url(../images/fondo-home.png);
+  background-image: url(../images/fondo-home.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -196,15 +197,18 @@ header .navbar a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
   transition: all 0.3s;
+  border: 1px solid rgb(0, 255, 234);
 }
 
 .about-img {
   width: 34%;
-  margin: 39px;
+  height: 34%;
+  margin-bottom: 129px;
 }
 
 .about-img img {
   width: 86%;
+  height: 143%;
   border: 3px solid var(--primary);
   object-fit: contain;
   object-position: center;
@@ -237,8 +241,9 @@ header .navbar a:hover {
 /*--------------------------Skills-----------------------*/
 .skills {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   transition: all 0.3s;
+  border: 1px solid rgb(255, 166, 0);
 }
 
 .heading {
@@ -344,7 +349,11 @@ header .navbar a:hover {
 /*-------------------------- Fin Skills-----------------------*/
 
 /*-------------------------- Portfolio-----------------------*/
-
+.portfolio{
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+}
 .portfolio-content {
   display: flex;
   align-items: center;
@@ -468,8 +477,10 @@ justify-content: space-between;
 .contact-gif {
   width: 250px;
 }
+
 .img-gif {
   width: 100%;
+  height: 100%;
   border: 2px solid var(--primary);
   border-radius: 2%;
 }
@@ -499,14 +510,12 @@ justify-content: space-between;
   }
 
   .home-text {
+    height: 451px;
     margin-top: 45px;
   }
+
   .about-text {
     margin-bottom: 66px;
-  }
-  .about-img {
-    width: 60%;
-    margin: 39px;
   }
 
   .info-box {
@@ -517,10 +526,10 @@ justify-content: space-between;
   .skills {
     min-height: 89vh;
   }
-
-  .heading h2 {
-    margin-top: 118px;
+  .skills-conte {
+    width: 88%;
   }
+
   .contact-gif {
     width: 278px;
   }
@@ -528,6 +537,21 @@ justify-content: space-between;
   .skills-educ {
     width: 217px;
   }
+
+}
+
+/* Small devices (landscape phones, less than 1024px) */
+@media (max-width: 1024px) {
+  .about {
+    min-height: 43vh;
+  }
+
+
+  .skills-conte {
+    width: 107%;
+    height: auto;
+  }
+
 
 }
 
@@ -552,10 +576,6 @@ justify-content: space-between;
     background: var(--bg-color);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.5s ease;
-  }
-
-  header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
   .navbar a {
@@ -662,7 +682,7 @@ justify-content: space-between;
   }
 
   .home-text {
-    width: 377px;
+    width: 330px;
   }
 
   .skills {
