@@ -105,7 +105,7 @@ header .navbar a:hover {
 }
 
 #menu-icon {
-  font-size: var(--h2-font);
+  font-size: 37px;
   cursor: pointer;
   display: none;
 }
@@ -339,7 +339,7 @@ header .navbar a:hover {
   transition: all 0.3s;
 }
 
-.skills-box i:hover{
+.skills-box i:hover {
   color: var(--bg-color);
   font-weight: 800;
   border-bottom: 3px solid var(--primary);
@@ -347,11 +347,10 @@ header .navbar a:hover {
 /*-------------------------- Fin Skills-----------------------*/
 
 /*-------------------------- Portfolio-----------------------*/
-.portfolio{
+.portfolio {
   width: 100%;
   height: auto;
 }
-
 
 .portfolio-content {
   display: flex;
@@ -421,17 +420,17 @@ header .navbar a:hover {
   transition: all 0.3s;
 }
 
-.p-box a i:hover{
+.p-box a i:hover {
   color: var(--hover) !important;
 }
 
 /*-------------------------- Fin Portfolio -----------------------*/
 
 /*-------------------------- contact -----------------------*/
-.contact-info{
-display: block;
-align-items: center;
-justify-content: space-between;
+.contact-info {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
 }
 .contact-content {
   width: 100%;
@@ -536,7 +535,6 @@ justify-content: space-between;
   .skills-educ {
     width: 217px;
   }
-
 }
 
 /* Small devices (landscape phones, less than 1024px) */
@@ -545,23 +543,18 @@ justify-content: space-between;
     min-height: 43vh;
   }
 
-
   .skills-conte {
     width: 107%;
     height: auto;
   }
-
-
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
   #menu-icon {
-    font-size: 32px;
-    position: relative;
-    left: 57px;
     display: initial;
-    color: var(--hover);
+    color: #222435;
+    margin-right: -69px;
   }
 
   header .navbar {
@@ -577,11 +570,15 @@ justify-content: space-between;
     transition: 0.5s ease;
   }
 
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
   .navbar a {
     margin: 1rem;
     padding: 1.5rem;
     display: block;
-    background: var(--hover);
+    background: #1f1c23;
     border-left: 4px solid var(--primary);
   }
 
@@ -612,11 +609,10 @@ justify-content: space-between;
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .home{
+  .home {
     background-image: none;
   }
-  .home-text{
-    
+  .home-text {
     background-color: rgba(255, 255, 255, -15.926);
     backdrop-filter: blur(91px);
   }
