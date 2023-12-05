@@ -122,7 +122,6 @@ header .navbar a:hover {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  background-position-y: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
