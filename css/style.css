@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
 :root {
   /* Colors */
   --bg-color: #ffffff;
-  --primary: #fe9d0b;
+  --primary: #ff9900;
   --hover: #1d1c34;
 
   /* Fonts */
@@ -117,7 +117,8 @@ header .navbar a:hover {
   width: 100%;
   min-height: 100vh;
   background: rgb(0, 0, 0);
-  background: linear-gradient( rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.338)), url(../images/fondo-home.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.338)),
+    url(../images/fondo-home.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -330,8 +331,18 @@ header .navbar a:hover {
   align-items: center;
   justify-content: space-between;
 }
+.skills-box .box_span{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills-box .box_span span {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
 
-.skills-box i {
+.skills-box .box_span i {
   display: flex;
   align-items: center;
   font-size: 60px;
@@ -341,8 +352,6 @@ header .navbar a:hover {
 
 .skills-box i:hover {
   color: var(--bg-color);
-  font-weight: 800;
-  border-bottom: 3px solid var(--primary);
 }
 /*-------------------------- Fin Skills-----------------------*/
 
@@ -462,7 +471,7 @@ header .navbar a:hover {
 }
 
 .info-box i {
-  font-size: 30px;
+  font-size: 36px;
   color: var(--primary);
   margin: 12px;
   transition: all 0.3s;
