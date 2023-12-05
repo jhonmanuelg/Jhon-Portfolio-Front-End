@@ -116,12 +116,13 @@ header .navbar a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(1, 11, 11);
-  background-image: url(../images/fondo-home.webp);
+  background: rgb(0, 0, 0);
+  background: linear-gradient( rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.338)), url(../images/fondo-home.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
+  background-position-y: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +144,7 @@ header .navbar a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.074);
+  background-color: rgba(7, 7, 7, 0.258);
   backdrop-filter: blur(42px);
   border: 1px solid var(--primary);
 }
