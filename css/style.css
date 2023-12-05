@@ -329,9 +329,11 @@ header .navbar a:hover {
   margin-top: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.skills-box .box_span{
+
+.skills-box .box_span {
   width: 70px;
   display: flex;
   flex-direction: column;
@@ -348,10 +350,6 @@ header .navbar a:hover {
   font-size: 60px;
   color: var(--primary);
   transition: all 0.3s;
-}
-
-.skills-box i:hover {
-  color: var(--bg-color);
 }
 /*-------------------------- Fin Skills-----------------------*/
 
@@ -644,6 +642,10 @@ header .navbar a:hover {
     height: 1599px;
   }
 
+  .skills-box {
+    width: 433px;
+  }
+
   .skills-educ {
     width: 310px;
     height: 161px;
@@ -701,9 +703,30 @@ header .navbar a:hover {
     width: 16rem;
   }
 
+  .skills-box {
+    width: 344px;
+  }
+
+  .skills-box .box_span {
+    width: 100px;
+  }
+
   .skills-box i {
     font-size: 35px;
     margin: 16px;
+  }
+
+  .skills-bars {
+    max-width: 520px;
+  }
+
+  .skills-box .box_span span {
+    font-size: 14px;
+    margin-bottom: -10px;
+  }
+
+  .skills-box .box_span i {
+    font-size: 64px;
   }
 
   .about-text p {
