@@ -584,7 +584,8 @@ header .navbar a:hover {
     margin: 1rem;
     padding: 1.5rem;
     display: block;
-    background: #1f1c23;
+    background: #000000;
+    color: var(--primary);
     border-left: 4px solid var(--primary);
   }
 
