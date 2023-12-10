@@ -632,6 +632,10 @@ header .navbar a:hover {
     font-size: 1.3rem;
   }
 
+  .home-text p{
+    text-align: left;
+  }
+
   .social {
     justify-content: space-between;
   }
