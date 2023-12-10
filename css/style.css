@@ -91,17 +91,16 @@ header {
 .navbar a {
   font-size: var(--h2-font);
   padding: 10px 20px;
-  color: var(--primary);
-  font-weight: 500;
+  color: var(--hover);
+  font-weight: 800;
   border-radius: 3px;
   transition: all 0.3s;
 }
 
 header .navbar a:hover {
   background: var(--primary);
-  color: var(--hover);
-  font-weight: 800;
-  border: 1px solid var(--primary);
+  color: var(--bg-color);
+  border:none;
 }
 
 #menu-icon {
@@ -116,9 +115,9 @@ header .navbar a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: rgb(0, 0, 0);
+  background: #06142D;
   background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.338)),
-    url(../images/fondo-home.webp);
+    url(../images/fondoHead.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -129,24 +128,23 @@ header .navbar a:hover {
 }
 
 .hom_div {
-  width: 700px;
+  width: 982px;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .home-text {
-  max-width: 70%;
+  width: 100%;
   border-radius: 2%;
   padding: 20px;
-  margin-top: 93px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgba(7, 7, 7, 0.258);
   backdrop-filter: blur(42px);
-  border: 1px solid var(--primary);
 }
 
 .home-text h1 {
@@ -168,7 +166,7 @@ header .navbar a:hover {
 }
 
 .home-text p {
-  text-align: justify;
+  text-align: center;
   font-size: var(--p-font);
   margin-bottom: var(--m-4);
   font-weight: 400;
@@ -179,14 +177,14 @@ header .navbar a:hover {
   background: var(--bg-color);
   color: var(--hover);
   border-radius: 2px;
+  font-weight: 800;
   transition: all 0.3s;
 }
 
 .btn:hover {
   background: var(--primary);
-  color: var(--hover);
-  font-weight: 800;
-  border: 1px solid var(--primary);
+  color: var(--bg-color);  
+  border: none;
 }
 
 /* =======================   ================ */
@@ -475,6 +473,7 @@ header .navbar a:hover {
   transition: all 0.3s;
 }
 
+
 .info-box i:hover {
   color: var(--bg-color);
 }
@@ -493,9 +492,9 @@ header .navbar a:hover {
 .copyright {
   padding: 20px;
   text-align: center;
-  color: var(--primary);
+  color: var(--hover);
   background: var(--bg-color);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 /*-------------------------- Fin contact -----------------------*/
@@ -514,10 +513,10 @@ header .navbar a:hover {
     right: 62px;
   }
 
-  .home-text {
+  /* .home-text {
     height: 451px;
     margin-top: 45px;
-  }
+  } */
 
   .about-text {
     margin-bottom: 66px;
@@ -590,7 +589,7 @@ header .navbar a:hover {
   }
 
   .home-text {
-    max-width: 410px;
+    width: 510px;
   }
 
   .about-img img {
@@ -619,9 +618,10 @@ header .navbar a:hover {
   .home {
     background-image: none;
   }
-  .home-text {
-    background-color: rgba(255, 255, 255, -15.926);
-    backdrop-filter: blur(91px);
+  
+  .home-text{
+    background-color: #000000;
+    backdrop-filter: blur(0px);
   }
   .home-text h1 {
     font-size: 2rem;
