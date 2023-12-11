@@ -1,4 +1,4 @@
-// Utiliza JavaScript para cargar diferidamente tu estilo después de que la página haya cargado
+// Utiliza JavaScript para cargar diferidamente estilo después de que la página haya cargado los elemento para el CEO
 function cargarEstiloDiferido() {
   const enlaceEstilo = document.createElement('link');
   enlaceEstilo.rel = 'eventoMenu/menu.js';

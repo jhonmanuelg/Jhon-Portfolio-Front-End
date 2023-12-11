@@ -218,8 +218,11 @@ header .navbar a:hover {
 }
 
 .about-text h2 {
+  width: 199px;
+  margin-bottom: 20px;
   font-size: var(--h1-font);
   font-weight: 600;
+  border-bottom: 1px solid var(--primary);
 }
 
 .about-text h3 {
@@ -389,9 +392,9 @@ header .navbar a:hover {
 }
 
 .p-img {
-  width: 218px;
-  height: 218px;
-  border-radius: 2%;
+  width: 244px;
+    height: 146px;
+  border-radius: 2.5%;
   border: 1px solid var(--primary);
 }
 
@@ -633,7 +636,11 @@ header .navbar a:hover {
   }
 
   .home-text p{
-    text-align: left;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    text-align: center;
   }
 
   .social {
