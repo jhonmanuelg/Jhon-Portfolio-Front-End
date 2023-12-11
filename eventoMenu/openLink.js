@@ -37,3 +37,14 @@ function openLink(event, link) {
   window.open(link, "_blank");
 }
 
+//function in JavaScript to smoothly navigate between sections of
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+}
+
