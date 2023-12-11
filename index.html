@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icons.webp" type="image/x-icon">
-<!-- Metadescripciones Resultados de búsqueda -->
-    <meta name="description" content="Explora el mundo del desarrollo Front-End con un programador apasionado. Descubre soluciones creativas, tutoriales detallados y las últimas tendencias en tecnologías web. Convierte ideas en experiencias visuales impactantes con un desarrollador Front-End comprometido con la excelencia y la innovación.">
-    
+    <!-- Metadescripciones Resultados de búsqueda -->
+    <meta name="description"
+        content="Explora el mundo del desarrollo Front-End con un programador apasionado. Descubre soluciones creativas, tutoriales detallados y las últimas tendencias en tecnologías web. Convierte ideas en experiencias visuales impactantes con un desarrollador Front-End comprometido con la excelencia y la innovación.">
+
     <title>Portfolio Front End</title>
 
     <!-- Link To CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" id="estilo-diferido">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="eventoMenu/openLink.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
     <!-- Navbar -->
     <header>
         <div class="logo">
-            <img src="images/Logo-jhon.webp" alt="Logo-jhon.webp">
+            <img src="images/Logo-jhon.webp" alt="Logo-jhon.webp" loading="lazy">
         </div>
         <div id="menu-icon" class="fas fa-bars"></div>
 
@@ -78,7 +79,7 @@
     <!-- About -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/jhonGil.webp" alt="jhonGil.webp">
+            <img src="images/jhonGil.webp" alt="jhonGil.webp" loading="lazy">
         </div>
         <div class="about-text">
             <h2>Sobre mim</h2>
@@ -244,7 +245,7 @@
             <div class="p-box">
                 <div class="p-img">
                     <a onclick="openLink(event, netflixUrl)">
-                        <img src="images/Netflix_Landing.webp" alt="Portado de Netflix">
+                        <img src="images/Netflix_Landing.webp" alt="Portado de Netflix" loading="lazy">
                     </a>
                 </div>
                 <h2>Projeto Netflix Landing</h2>
@@ -258,7 +259,7 @@
             <div class="p-box">
                 <div class="p-img">
                     <a onclick="openLink(event, crudUrl)">
-                        <img src="images/CRUD.webp" alt="portada opereraçõe CRUD">
+                        <img src="images/CRUD.webp" alt="portada opereraçõe CRUD" loading="lazy">
                     </a>
 
 
@@ -276,7 +277,7 @@
             <div class="p-box">
                 <div class="p-img">
                     <a onclick="openLink(event, pageUrl)">
-                        <img src="images/Landing_Page.webp" alt="Landing pagen de projeto">
+                        <img src="images/Landing_Page.webp" alt="Landing pagen de projeto" loading="lazy">
                     </a>
                 </div>
                 <h2>Landing Page Bootstrap</h2>
@@ -312,7 +313,8 @@
                 </div>
 
                 <div class="info-box social">
-                    <a href="https://www.linkedin.com/in/jhon-manuel-gil/" id="social" onclick="openLink(event, linkedinURL)">
+                    <a href="https://www.linkedin.com/in/jhon-manuel-gil/" id="social"
+                        onclick="openLink(event, linkedinURL)">
                         <i class="fab fa-linkedin"></i>
                     </a>
 
@@ -334,7 +336,7 @@
                 </div>
             </div>
             <div class="contact-gif">
-                <img class="img-gif" src="./images/artistajhon.webp" alt="artistajhon.webp">
+                <img class="img-gif" src="./images/artistajhon.webp" alt="artistajhon.webp" loading="lazy">
             </div>
 
         </div>
@@ -347,8 +349,8 @@
     </div>
 
 
-
-
+    <!-- evento Menu dos link social-->
+    <script async src="eventoMenu/openLink.js"></script>
     <!-- Link To JS -->
     <script src="eventoMenu/menu.js"></script>
 

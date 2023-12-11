@@ -1,3 +1,18 @@
+// Utiliza JavaScript para cargar diferidamente tu estilo después de que la página haya cargado
+function cargarEstiloDiferido() {
+  const enlaceEstilo = document.createElement('link');
+  enlaceEstilo.rel = 'eventoMenu/menu.js';
+  enlaceEstilo.href = 'css/style.css';
+  document.head.appendChild(enlaceEstilo);
+}
+
+// Llama a la función después de que la página ha cargado
+document.addEventListener('DOMContentLoaded', function() {
+  cargarEstiloDiferido('eventoMenu/menu.js', 'css/style.css');
+});
+
+
+
 // función menu responsibo
 
 let menu = document.querySelector("#menu-icon");
@@ -12,7 +27,6 @@ window.onscroll = () => {
   menu.classList.remove("fa-times");
   navbar.classList.remove("active");
 };
-
 
 
 
