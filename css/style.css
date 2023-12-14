@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
   /* Fonts */
   --h1-font: 2.2rem;
   --h2-font: 1.1rem;
-  --p-font: 0.9rem;
+  --p-font: 1rem;
   --spacing: 1px;
   /* Margins */
   --m-1: 0.4rem;
@@ -639,6 +639,11 @@ header .navbar a:hover {
     text-align: center;
   }
 
+  .about-text p {
+    text-align: left;
+    
+}
+
   .about-text h2 {
     text-align: center;
   }
@@ -661,6 +666,7 @@ header .navbar a:hover {
   .skills-educ {
     width: 310px;
     height: 161px;
+    margin: 6px 0px 0px 0px;
   }
 
   .skills-educ h2 {
@@ -674,7 +680,13 @@ header .navbar a:hover {
   .skills-educ p {
     font-size: 16px;
   }
+  .portfolio {
+    margin-top: 76px;
+}
 
+.p-box p {
+  text-align: left;
+}
   .heading {
     margin-top: 9px;
   }
