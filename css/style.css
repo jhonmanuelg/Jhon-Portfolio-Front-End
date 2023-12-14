@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb {
   /* Fonts */
   --h1-font: 2.2rem;
   --h2-font: 1.1rem;
-  --p-font: 1rem;
+  --p-font: 1.1rem;
   --spacing: 1px;
   /* Margins */
   --m-1: 0.4rem;
@@ -100,7 +100,7 @@ header {
 header .navbar a:hover {
   background: var(--primary);
   color: var(--bg-color);
-  border:none;
+  border: none;
 }
 
 #menu-icon {
@@ -115,7 +115,7 @@ header .navbar a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #06142D;
+  background: #06142d;
   background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.338)),
     url(../images/fondoHead.webp);
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@ header .navbar a:hover {
 
 .btn:hover {
   background: var(--primary);
-  color: var(--bg-color);  
+  color: var(--bg-color);
   border: none;
 }
 
@@ -285,7 +285,14 @@ header .navbar a:hover {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  border-bottom: 1px solid var(--primary);
+}
+
+.skills-educ::after {
+  content: " ";
+  width: 216px;
+  text-align: center;
+  border-bottom: 2px solid var(--primary);
+  margin-top: 10px;
 }
 
 .skills-educ h2 {
@@ -393,7 +400,7 @@ header .navbar a:hover {
 
 .p-img {
   width: 244px;
-    height: 146px;
+  height: 146px;
   border-radius: 2.5%;
   border: 1px solid var(--primary);
 }
@@ -456,11 +463,13 @@ header .navbar a:hover {
 }
 
 .info-box p {
+  font-size: var(--p-font);
   margin-left: 1rem;
   font-weight: 400;
   margin-bottom: 9px;
   text-align: justify;
 }
+
 .info-box {
   width: 419px;
   display: flex;
@@ -475,7 +484,6 @@ header .navbar a:hover {
   margin: 12px;
   transition: all 0.3s;
 }
-
 
 .info-box i:hover {
   color: var(--bg-color);
@@ -622,8 +630,8 @@ header .navbar a:hover {
   .home {
     background-image: none;
   }
-  
-  .home-text{
+
+  .home-text {
     background-color: #000000;
     backdrop-filter: blur(0px);
   }
@@ -635,14 +643,13 @@ header .navbar a:hover {
     font-size: 1.3rem;
   }
 
-  .home-text p{
+  .home-text p {
     text-align: center;
   }
 
   .about-text p {
     text-align: left;
-    
-}
+  }
 
   .about-text h2 {
     text-align: center;
@@ -669,6 +676,10 @@ header .navbar a:hover {
     margin: 6px 0px 0px 0px;
   }
 
+  .skills-educ::after {
+    width: 315px;
+  }
+
   .skills-educ h2 {
     font-weight: 400;
     font-size: 18px;
@@ -682,11 +693,11 @@ header .navbar a:hover {
   }
   .portfolio {
     margin-top: 76px;
-}
+  }
 
-.p-box p {
-  text-align: left;
-}
+  .p-box p {
+    text-align: left;
+  }
   .heading {
     margin-top: 9px;
   }
@@ -759,6 +770,8 @@ header .navbar a:hover {
 
   .skills-educ {
     width: 263px;
+    position: relative;
+    right: 26px;
   }
 
   .contact-content {
