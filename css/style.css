@@ -392,7 +392,7 @@ header .navbar a:hover {
 .p-box:hover {
   background: var(--primary);
   transition: 0.5s ease;
-  
+
   /*--- hover GITHUB --  */
 
   &.p-box a i {
@@ -683,7 +683,7 @@ header .navbar a:hover {
   }
 
   .skills-educ::after {
-    width: 315px;
+    width: 271px;
   }
 
   .skills-educ h2 {
