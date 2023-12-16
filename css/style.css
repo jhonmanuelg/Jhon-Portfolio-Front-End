@@ -152,11 +152,8 @@ header .navbar a:hover {
   font-size: var(--h1-font);
   text-align: center;
   letter-spacing: var(--spacing);
-  animation: typing 4s steps(40) infinite;
-}
-
-.home-text span {
   color: var(--primary);
+  /* animation: typing 4s steps(40) infinite; */
 }
 
 .home-text h2 {
@@ -457,13 +454,6 @@ header .navbar a:hover {
   transition: all 0.3s;
 }
 
-.social {
-  position: relative;
-  bottom: 24px;
-  display: flex;
-  align-items: center;
-}
-
 .info-box p {
   font-size: var(--p-font);
   margin-left: 1rem;
@@ -480,19 +470,33 @@ header .navbar a:hover {
   margin: 1rem 0;
 }
 
-.info-box a{
+.home_social {
+  position: relative;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.home_social a {
   text-decoration: none;
 }
 
-.info-box i {
+.home_social i {
   font-size: 36px;
   color: var(--primary);
   margin: 12px;
   transition: all 0.3s;
 }
 
-.info-box i:hover {
+.home_social i:hover {
   color: var(--bg-color);
+}
+
+.social {
+  position: relative;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-gif {
@@ -654,6 +658,7 @@ header .navbar a:hover {
   }
 
   .about-text p {
+    width: 420px;
     text-align: left;
   }
 
@@ -662,7 +667,8 @@ header .navbar a:hover {
   }
 
   .social {
-    justify-content: space-between;
+    position: relative;
+    left: 31px;
   }
 
   .about-img {
@@ -716,9 +722,12 @@ header .navbar a:hover {
     margin: 0px 0px 0px -49px;
   }
 
+  .info-box p {
+    width: 413px;
+  }
   .contact-gif {
     width: 278px;
-    margin: 0px 0px 0px 83px;
+    margin: 33px 0px 0px 65px;
   }
 }
 /* Xx-Small devices (portrait phones, less than 476px) * */
@@ -745,6 +754,7 @@ header .navbar a:hover {
   }
 
   .skills-box {
+    justify-content: center;
     width: 344px;
   }
 
@@ -769,9 +779,14 @@ header .navbar a:hover {
   .skills-box .box_span i {
     font-size: 64px;
   }
+  .about-text h2 {
+    position: relative;
+    left: 69px;
+    bottom: 24px;
+  }
 
   .about-text p {
-    width: 20rem;
+    width: 21rem;
   }
 
   .skills-educ {
@@ -807,11 +822,15 @@ header .navbar a:hover {
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 360.98px) {
+@media (max-width: 380.98px) {
   .home-text {
     width: 321px;
   }
   .contact-content {
     right: 107px;
+  }
+
+  .contact-content {
+    right: 60px;
   }
 }
