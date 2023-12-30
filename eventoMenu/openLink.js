@@ -1,17 +1,25 @@
 
 // función de WhatsApp
-function contactarPorWhatsApp() {
-    // Número de teléfono en el formato internacional
-    var numero = "5511958838782"; 
-  
-    // Crear el enlace de WhatsApp
-    var enlaceWhatsApp = "https://wa.me/" + numero;
-  
-    // Abrir enlace en una nueva ventana o pestaña
-    window.open(enlaceWhatsApp, "_blank");
-  }
+// Obtener elementos con la clase "whatsappButton"
+var whatsappButtons = document.getElementsByClassName('whatsappButton');
 
+//  clase "whatsappButton"
+for (var i = 0; i < whatsappButtons.length; i++) {
+    // Asignar un controlador de eventos botón
+    whatsappButtons[i].addEventListener('click', function() {
+        // número de teléfono al que deseas enviar el mensaje
+        var phoneNumber = '5511958838782';
 
+        // el mensaje predeterminado
+        var message = 'Olá, sou Jhon MAnuel Gil muito obrigado por entrar em contato comigo.';
+
+        // Construir la URL de WhatsApp
+        var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+
+        // Abrir WhatsApp en una nueva ventana o pestaña
+        window.open(whatsappURL, '_blank');
+    });
+}
 
 // link para abrir las paginas en otra ventana redes sociales
 const githubURL = "https://github.com/jhonmanuelg";
