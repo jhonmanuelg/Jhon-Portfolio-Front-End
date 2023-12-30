@@ -1,6 +1,3 @@
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -115,13 +112,13 @@ header .navbar a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: #06142d;
-  background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.338)),
-    url(../images/fondoHead.webp);
+  background: #000000;
+  background: url(../images/nature-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+  border-image: fill 0 linear-gradient(rgba(0, 0, 0, 0.293), #000);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,14 +134,14 @@ header .navbar a:hover {
 
 .home-text {
   width: 100%;
-  border-radius: 2%;
+  border-radius: 3px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(7, 7, 7, 0.258);
-  backdrop-filter: blur(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
 }
 
 .home-text h1 {
@@ -152,14 +149,18 @@ header .navbar a:hover {
   font-size: var(--h1-font);
   text-align: center;
   letter-spacing: var(--spacing);
-  color: var(--primary);
-  /* animation: typing 4s steps(40) infinite; */
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 .home-text h2 {
   font-size: 40px;
   margin: var(--m-1) 0;
   letter-spacing: var(--spacing);
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 .home-text p {
@@ -219,6 +220,9 @@ header .navbar a:hover {
   margin-bottom: 20px;
   font-size: var(--h1-font);
   font-weight: 600;
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background-clip: text;
+  color: transparent;
   border-bottom: 1px solid var(--primary);
 }
 
@@ -253,6 +257,9 @@ header .navbar a:hover {
 .heading h2 {
   font-size: var(--h1-font);
   font-weight: 600;
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background-clip: text;
+  color: transparent;
   border-bottom: 2px solid var(--primary);
 }
 
@@ -378,11 +385,11 @@ header .navbar a:hover {
   align-items: center;
   width: 300px;
   height: auto;
-  background: #2c3e50;
   margin: 20px;
   padding: 40px;
   text-align: center;
-  border-radius: 1%;
+  border-radius: 3px;
+  border: 3px solid var(--primary);
   transition: all 0.3s;
 }
 
@@ -401,7 +408,6 @@ header .navbar a:hover {
   width: 244px;
   height: 146px;
   border-radius: 2.5%;
-  border: 1px solid var(--primary);
 }
 
 .p-img img {
@@ -533,11 +539,6 @@ header .navbar a:hover {
     position: relative;
     right: 62px;
   }
-
-  /* .home-text {
-    height: 451px;
-    margin-top: 45px;
-  } */
 
   .about-text {
     margin-bottom: 66px;
