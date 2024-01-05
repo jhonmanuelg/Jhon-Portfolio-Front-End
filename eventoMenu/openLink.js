@@ -1,6 +1,6 @@
 
-// función de WhatsApp
-// Obtener elementos con la clase "whatsappButton"
+
+// función de WhatsApp Obtener elementos con la clase "whatsappButton"
 var whatsappButtons = document.getElementsByClassName('whatsappButton');
 
 //  clase "whatsappButton"
@@ -11,7 +11,7 @@ for (var i = 0; i < whatsappButtons.length; i++) {
     var phoneNumber = '5511958838782';
 
     // el mensaje predeterminado
-    var message = 'Olá, sou Jhon MAnuel Gil muito obrigado por entrar em contato comigo.';
+    var message = 'Olá, sou Jhon Manuel Gil muito obrigado por entrar em contato comigo.';
 
     // Construir la URL de WhatsApp
     var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
@@ -20,6 +20,10 @@ for (var i = 0; i < whatsappButtons.length; i++) {
     window.open(whatsappURL, '_blank');
   });
 }
+
+
+
+
 
 // link para abrir las paginas en otra ventana redes sociales
 const githubURL = "https://github.com/jhonmanuelg";
@@ -55,4 +59,6 @@ function scrollToSection(sectionId) {
     });
   }
 }
+
+
 
