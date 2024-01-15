@@ -43,8 +43,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 html {
-  background: #000000;
-  color: var(--bg-color);
+  background: #e1e1e1;
+  color: var(--hover);
 }
 
 section {
@@ -95,6 +95,7 @@ header {
 }
 
 header .navbar a:hover {
+  font-size: 17px;
   background: var(--primary);
   color: var(--bg-color);
   border: none;
@@ -113,7 +114,8 @@ header .navbar a:hover {
   width: 100%;
   min-height: 100vh;
   background: #000000;
-  background: linear-gradient(rgba(0, 0, 0, 0.293), #000), url(../images/nature-3.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.073), #000),
+    url(../images/nature-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -123,7 +125,7 @@ header .navbar a:hover {
 }
 
 .hom_div {
-  width: 982px;
+  width: 835px;
   margin-top: 5rem;
   display: flex;
   align-items: center;
@@ -138,8 +140,8 @@ header .navbar a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.247);
+  backdrop-filter: blur(3px);
 }
 
 .home-text h1 {
@@ -147,7 +149,7 @@ header .navbar a:hover {
   font-size: 4rem;
   text-align: center;
   letter-spacing: var(--spacing);
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
   background-clip: text;
   color: transparent;
 }
@@ -156,12 +158,13 @@ header .navbar a:hover {
   font-size: 40px;
   margin: var(--m-1) 0;
   letter-spacing: var(--spacing);
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
   background-clip: text;
   color: transparent;
 }
 
 .home-text p {
+  color: var(--bg-color);
   text-align: center;
   font-size: var(--p-font);
   margin-bottom: var(--m-4);
@@ -178,6 +181,7 @@ header .navbar a:hover {
 }
 
 .btn:hover {
+  font-size: 17px;
   background: var(--primary);
   color: var(--bg-color);
   border: none;
@@ -200,17 +204,15 @@ header .navbar a:hover {
 }
 
 @keyframes pouce {
-  0%{
+  0% {
     transform: translateY(0);
   }
-  40%{
+  40% {
     transform: translateY(-20);
   }
-  60%{
-
+  60% {
     transform: translateY(-10px);
   }
-  
 }
 
 .about-img img {
@@ -231,7 +233,7 @@ header .navbar a:hover {
   margin-bottom: 30px;
   font-size: var(--h1-font);
   font-weight: 600;
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
   background-clip: text;
   color: transparent;
   border-bottom: 1px solid var(--primary);
@@ -263,7 +265,7 @@ header .navbar a:hover {
 .heading h2 {
   font-size: var(--h1-font);
   font-weight: 600;
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 100%);
+  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
   background-clip: text;
   color: transparent;
   border-bottom: 2px solid var(--primary);
@@ -297,18 +299,10 @@ header .navbar a:hover {
   flex-wrap: wrap;
 }
 
-.skills-educ::after {
-  content: "";
-  width: auto;
-  text-align: center;
-  border-bottom: 2px solid var(--primary);
-  margin-top: 10px;
-}
-
 .skills-educ h2 {
   font-weight: 400;
   font-size: 19px;
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 40%, #ac6700 100%);
+  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
   background-clip: text;
   color: transparent;
 }
@@ -368,7 +362,7 @@ header .navbar a:hover {
   font-size: 16px;
   margin-bottom: 4px;
   font-weight: 600;
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ff9900 40%, #ac6700 100%);
+  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
   background-clip: text;
   color: transparent;
 }
@@ -392,8 +386,6 @@ header .navbar a:hover {
     transform: scale(1);
   }
 }
-
-
 
 /*-------------------------- Fin Skills-----------------------*/
 
@@ -422,9 +414,8 @@ header .navbar a:hover {
   text-align: center;
   border-radius: 3px;
   border: 3px solid var(--primary);
-  transition: all 0.3s; 
+  transition: all 0.3s;
 }
-
 
 .portfolio-box:hover {
   background: var(--primary);
@@ -544,17 +535,15 @@ header .navbar a:hover {
 }
 
 @keyframes pouce {
-  0%{
+  0% {
     transform: translateY(0);
   }
-  40%{
+  40% {
     transform: translateY(-20);
   }
-  60%{
-
+  60% {
     transform: translateY(-10px);
   }
-  
 }
 
 .img-gif {
@@ -645,7 +634,7 @@ header .navbar a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: var(--bg-color);
+    background: rgba(255, 255, 255, 0.982);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.5s ease;
   }
@@ -658,11 +647,18 @@ header .navbar a:hover {
     margin: 1rem;
     padding: 1.5rem;
     display: block;
-    background: rgba(0, 0, 0, 0.982);
-    color: var(--bg-color);
-    border-left: 4px solid var(--primary);
+    background: var(--primary);
+    color: var(--hover);
+    border-left: 4px solid var(--hover);
   }
 
+  .navbar a:hover {
+    font-size: 19px;
+    background: var(--primary);
+    color: var(--bg-color);
+    border: none;
+    border-left: 9px solid var(--bg-color);
+  }
   .home-text {
     width: 510px;
   }
@@ -690,13 +686,26 @@ header .navbar a:hover {
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .logo img{
+    display: none;
+  }
+
+
+  .hom_div {
+    /* border: 1px solid rgb(0, 0, 0); */
+    width: 40rem;
+    border-radius: 3px;
+  }
+
   .home {
     background-image: none;
   }
 
   .home-text {
-    background-color: #000000;
-    backdrop-filter: blur(0px);
+    background-color: rgba(30, 30, 30, 0.064);
+    backdrop-filter: blur(3px);
+    width: 28rem;
+    border-radius: 3px;
   }
 
   .home-text h1 {
@@ -708,8 +717,14 @@ header .navbar a:hover {
   }
 
   .home-text p {
+    margin-top: 9px;
     text-align: center;
     font-size: 1rem;
+    color: var(--hover);
+  }
+
+  .about-img img {
+    width: 20rem;
   }
 
   .about-text p {
@@ -793,14 +808,22 @@ header .navbar a:hover {
 /* Xx-Small devices (portrait phones, less than 476px) * */
 
 @media (max-width: 475.98px) {
-  .logo img {
-    display: none;
+  .hom_div {
+    width: 22rem;
+  }
+
+  .home {
+    background-image: none;
   }
 
   .home-text {
-    width: 330px;
+    width: 22rem;
+    padding: 4px;
   }
 
+  .home-text p {
+    font-size: 0.9rem;
+  }
   .skills {
     width: 100%;
     min-height: 100vh;
@@ -810,7 +833,7 @@ header .navbar a:hover {
     width: 30rem;
   }
   .about-img img {
-    width: 16rem;
+    width: 22rem;
   }
 
   .skills-box {
@@ -828,7 +851,7 @@ header .navbar a:hover {
   }
 
   .skills-bars {
-  width: 367px;
+    width: 367px;
   }
 
   .skills-box .box_span span {
@@ -852,7 +875,7 @@ header .navbar a:hover {
   .skills-educ {
     width: 263px;
     position: relative;
-    right: 26px;
+    right: 15px;
   }
 
   .contact-content {
@@ -886,7 +909,7 @@ header .navbar a:hover {
   .home-text {
     width: 321px;
   }
-  .skills-text{
+  .skills-text {
     margin-left: 17px;
   }
 
