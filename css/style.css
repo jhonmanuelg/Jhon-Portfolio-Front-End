@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
   /* Colors */
   --bg-color: #ffffff;
   --primary: #ff9900;
-  --hover: #1d1c34;
+  --hover: #000000;
 
   /* Fonts */
   --h1-font: 2.2rem;
@@ -114,8 +114,7 @@ header .navbar a:hover {
   width: 100%;
   min-height: 100vh;
   background: #000000;
-  background: linear-gradient(rgba(0, 0, 0, 0.073), #000),
-    url(../images/nature-3.webp);
+  background: linear-gradient(rgba(245, 244, 244, 0), #000), url(../images/nature-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -140,8 +139,8 @@ header .navbar a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.247);
-  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(6px);
 }
 
 .home-text h1 {
@@ -149,18 +148,18 @@ header .navbar a:hover {
   font-size: 4rem;
   text-align: center;
   letter-spacing: var(--spacing);
-  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-text h2 {
   font-size: 40px;
   margin: var(--m-1) 0;
   letter-spacing: var(--spacing);
-  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home-text p {
@@ -218,10 +217,10 @@ header .navbar a:hover {
 .about-img img {
   width: 100%;
   height: 100%;
-  border: 3px solid var(--primary);
   object-fit: contain;
   object-position: center;
-  border-radius: 2px;
+  border: 2px solid var(--primary);
+  border-radius: 3px;
 }
 
 .about-text {
@@ -233,9 +232,9 @@ header .navbar a:hover {
   margin-bottom: 30px;
   font-size: var(--h1-font);
   font-weight: 600;
-  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   border-bottom: 1px solid var(--primary);
 }
 
@@ -265,9 +264,9 @@ header .navbar a:hover {
 .heading h2 {
   font-size: var(--h1-font);
   font-weight: 600;
-  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   border-bottom: 2px solid var(--primary);
 }
 
@@ -302,9 +301,9 @@ header .navbar a:hover {
 .skills-educ h2 {
   font-weight: 400;
   font-size: 19px;
-  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills-educ p {
@@ -362,9 +361,9 @@ header .navbar a:hover {
   font-size: 16px;
   margin-bottom: 4px;
   font-weight: 600;
-  background: linear-gradient(to right, #ff9900 0%, #000000 100%);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills-box .box_span i {
@@ -413,7 +412,7 @@ header .navbar a:hover {
   padding: 40px;
   text-align: center;
   border-radius: 3px;
-  border: 3px solid var(--primary);
+  border: 2px solid var(--primary);
   transition: all 0.3s;
 }
 
@@ -550,7 +549,6 @@ header .navbar a:hover {
   width: 100%;
   height: 100%;
   border: 2px solid var(--primary);
-  border-radius: 2%;
 }
 
 .copyright {
@@ -686,10 +684,9 @@ header .navbar a:hover {
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .logo img{
+  .logo img {
     display: none;
   }
-
 
   .hom_div {
     /* border: 1px solid rgb(0, 0, 0); */
@@ -817,23 +814,24 @@ header .navbar a:hover {
   }
 
   .home-text {
-    width: 22rem;
+    width: 20rem;
     padding: 4px;
   }
 
   .home-text p {
     font-size: 0.9rem;
   }
+
   .skills {
     width: 100%;
     min-height: 100vh;
   }
 
   .about-img {
-    width: 30rem;
+    width: 21rem;
   }
   .about-img img {
-    width: 22rem;
+    width: 21rem;
   }
 
   .skills-box {
