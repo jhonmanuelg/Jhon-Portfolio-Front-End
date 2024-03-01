@@ -65,7 +65,7 @@ header {
   justify-content: space-between;
   background: var(--bg-color);
   padding: 18px 100px;
-  box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.049);
   transition: all 0.3s;
 }
 
@@ -75,7 +75,7 @@ header {
 }
 
 .logo img {
-  width: 55px;
+  width: 70px;
   height: 55px;
   border-radius: 3px;
 }
@@ -112,7 +112,7 @@ header .navbar a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(245, 244, 244, 0), #000), url(../images/nature-3.webp);
+  background: linear-gradient(rgba(245, 244, 244, 0), #00000029), url(../images/nature-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -129,8 +129,8 @@ header .navbar a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.19);
-  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.295);
+  backdrop-filter: blur(5px);
 }
 
 .home-text {
@@ -145,7 +145,7 @@ header .navbar a:hover {
   font-size: 4rem;
   text-align: center;
   letter-spacing: var(--spacing);
-  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  background: linear-gradient(90deg, #ff9900 0%, #fdfdfd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -155,7 +155,7 @@ header .navbar a:hover {
   margin: var(--m-1) 0;
   letter-spacing: var(--spacing);
   letter-spacing: var(--spacing);
-  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  background: linear-gradient(90deg, #ff9900 0%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -42,6 +42,10 @@ const pageUrl = "https://jhonmanuelg.github.io/Landing_Page_using_Bootstrap_5/";
 const pageGit = "https://github.com/jhonmanuelg/Landing_Page_using_Bootstrap_5";
 
 
+// Encontrar o elemento com a classe 'eventCv' urriculum-Jhon.pdf
+const eventCv = href="./CV_Jhon/Curriculum-Jhon.pdf"
+
+
 // evento click redes sociales
 function openLink(event, link) {
   event.preventDefault();
@@ -59,6 +63,3 @@ function scrollToSection(sectionId) {
     });
   }
 }
-
-
-
