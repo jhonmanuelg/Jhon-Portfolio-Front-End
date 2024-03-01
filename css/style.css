@@ -706,10 +706,16 @@ header .navbar a:hover {
 
   .home-text h1 {
     font-size: 1.5rem;
+    background: linear-gradient(90deg, #ff9900 0%, #000000 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .home-text h2 {
     font-size: 1.1rem;
+    background: linear-gradient(90deg, #ff9900 0%, #000000 100%);    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .home-text p {
