@@ -1,26 +1,24 @@
+document.addEventListener('DOMContentLoaded', function() {
+  // variables para enlaces y mensajes
+  const phoneNumber = '<?php echo $phoneNumber; ?>';
+  const message = '¿Olá, muito obrigado pela oportunidade, estou muito animado que você venha falar comigo, me sinto muito feliz?';
 
-
-// función de WhatsApp Obtener elementos con la clase "whatsappButton"
-var whatsappButtons = document.getElementsByClassName('whatsappButton');
-
-//  clase "whatsappButton"
-for (var i = 0; i < whatsappButtons.length; i++) {
-  // Asignar un controlador de eventos botón
-  whatsappButtons[i].addEventListener('click', function () {
-    // número de teléfono al que deseas enviar el mensaje
-    var phoneNumber = '5511958838782';
-
-    // el mensaje predeterminado
-    var message = 'Olá, sou Jhon Manuel Gil muito obrigado por entrar em contato comigo.';
-
-    // Construir la URL de WhatsApp
-    var whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
-
-    // Abrir WhatsApp en una nueva ventana o pestaña
-    window.open(whatsappURL, '_blank');
+  // Obtener elementos con la clase "whatsappButton" y agregar evento click
+  const whatsappButtons = document.querySelectorAll('.whatsappButton');
+  whatsappButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const whatsappURL = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+      window.open(whatsappURL, '_blank');
+    });
   });
-}
 
+  // Función para abrir enlaces en otra ventana
+  function openLink(event, link) {
+    event.preventDefault();
+    window.open(link, "_blank");
+  }
+
+});
 
 
 
