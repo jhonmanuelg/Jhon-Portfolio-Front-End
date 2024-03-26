@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // variables para enlaces y mensajes
-  const phoneNumber = '<?php echo $phoneNumber; ?>';
+  const phoneNumber = 5511958838782;
   const message = '¿Olá, muito obrigado pela oportunidade, estou muito animado que você venha falar comigo, me sinto muito feliz?';
 
   // Obtener elementos con la clase "whatsappButton" y agregar evento click
