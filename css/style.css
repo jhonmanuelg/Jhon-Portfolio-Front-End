@@ -43,8 +43,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 html {
-  background: #e1e1e1;
-  color: var(--hover);
+  background: #000000;
+  color: var(--bg-color);
 }
 
 section {
@@ -95,7 +95,7 @@ header {
 
 header .navbar a:hover {
   font-size: 17px;
-  background: var(--primary);
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   color: var(--bg-color);
   border: none;
 }
@@ -112,7 +112,7 @@ header .navbar a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(245, 244, 244, 0), #00000029),
+  background: linear-gradient(to bottom, rgba(58, 58, 58, 0.718), #00000046),
     url(../images/nature-3.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,8 +123,10 @@ header .navbar a:hover {
 }
 
 .hom_div {
+  border: 1px solid #ffffff66;
   width: 835px;
   margin-top: 5rem;
+  border-radius: 3px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -142,23 +144,68 @@ header .navbar a:hover {
   justify-content: center;
 }
 
-.home-text h1 {
-  font-size: 4rem;
+/* ================ CSS Glitch Text Effect ===================== */
+.glitch-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  letter-spacing: var(--spacing);
-  background: linear-gradient(90deg, #ff9900 0%, #fdfdfd 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.home-text h2 {
-  font-size: 40px;
-  margin: var(--m-1) 0;
-  letter-spacing: var(--spacing);
-  letter-spacing: var(--spacing);
-  background: linear-gradient(90deg, #ff9900 0%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.glitch {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #f89b29;
+  z-index: -8;
+}
+
+.glitch:after {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
+  color: #ff0f7b;
+  z-index: -3;
+}
+
+@keyframes glitch-it {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  to {
+    transform: translate(0);
+  }
 }
 
 .home-text p {
@@ -170,16 +217,16 @@ header .navbar a:hover {
 
 .btn {
   padding: 10px 22px;
-  background: var(--bg-color);
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   color: var(--hover);
-  border-radius: 2px;
+  border-radius: 3px;
   font-weight: 800;
   transition: all 0.3s;
 }
 
 .btn:hover {
   font-size: 17px;
-  background: var(--primary);
+  background: linear-gradient(-45deg, #ff0f7b 0%, #f89b29 100%);
   color: var(--bg-color);
   border: none;
 }
@@ -217,6 +264,7 @@ header .navbar a:hover {
   height: 100%;
   object-fit: contain;
   object-position: center;
+  filter: drop-shadow(10px 18px 16px #ffae00);
 }
 
 .about-text {
@@ -228,7 +276,7 @@ header .navbar a:hover {
   margin-bottom: 30px;
   font-size: var(--h1-font);
   font-weight: 600;
-  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 1px solid var(--primary);
@@ -260,13 +308,16 @@ header .navbar a:hover {
 .heading h2 {
   font-size: var(--h1-font);
   font-weight: 600;
-  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 2px solid var(--primary);
 }
 
+/*-------------------------- skills-conte-----------------------*/
+
 .skills-content {
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -284,43 +335,110 @@ header .navbar a:hover {
   flex-wrap: wrap;
 }
 
-.skills-educ {
-  border: 1px solid var(--primary);
-  width: 292px;
-  height: 180px;
-  margin: 0px 15px 39px 5px;
-  padding: 8px;
+.skills-content .card-title {
+  color: #452c2c;
+  font-size: 1.2em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.skills-content .small-desc {
+  font-size: 0.5em;
+  font-weight: 6;
+  line-height: 1.5em;
+  color: #452c2c;
+}
+
+.skills-content .small-desc {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.skills-content h3,
+span {
+  margin-top: 6px;
+  font-size: 0.9em;
+  color: #452c2c;
+}
+
+.skills-content .go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 0 4px 0 32px;
+}
+
+.skills-content .go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+}
+
+.skills-content .card {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  max-height: 320px;
+  background-color: #f2f8f9;
+  border-radius: 3px;
+  padding: 2em 1.2em;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background: linear-gradient(to right, #ffffff, #dadada);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
-.skills-educ h2 {
-  font-weight: 400;
-  font-size: 19px;
-  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.skills-content .card:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
 }
 
-.skills-educ p {
-  margin-top: 1.5px;
-  font-size: 15px;
-  font-weight: 400;
+.skills-content .card:hover:before {
+  transform: scale(28);
 }
 
-.skills-educ h3 {
-  margin-top: 1.5px;
-  font-size: 14px;
-  font-weight: 300;
+.skills-content .card:hover .small-desc {
+  transition: all 0.5s ease-out;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.skills-educ span {
-  margin-top: 1.5px;
-  font-size: 13px;
-  font-weight: 300;
+.skills-content .card:hover .card-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
 }
+
+.skills-content .card:hover h3 {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
+
+.skills-content .card:hover span {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
+
+/*--------------------------Skills-----------------------*/
 
 .skills-bars {
   display: flex;
@@ -332,7 +450,7 @@ header .navbar a:hover {
   font-weight: 400;
 }
 
-.skills .heading_h2{
+.skills .heading_h2 {
   margin: 151px 0px -56px 0px;
 }
 
@@ -363,7 +481,7 @@ header .navbar a:hover {
   font-size: 16px;
   margin-bottom: 4px;
   font-weight: 600;
-  background: linear-gradient(90deg, #ff9900 0%, #392300 100%);
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -392,91 +510,98 @@ header .navbar a:hover {
 /*-------------------------- Fin Skills-----------------------*/
 
 /*-------------------------- Portfolio-----------------------*/
-.portfolio {
+
+.portfolio_Cont {
   width: 100%;
-  height: auto;
-}
-
-.portfolio {
+  height: 378px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  transition: all 0.3s;
 }
 
-.portfolio-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.card {
+  position: relative;
   width: 300px;
-  height: auto;
-  margin: 20px;
-  padding: 40px;
-  text-align: center;
-  border-radius: 3px;
-  border: 2px solid var(--primary);
-  transition: all 0.3s;
+  height: 200px;
+  background: linear-gradient(90deg, #ff9900 0%, #e3e3e3 100%);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.portfolio-box:hover {
-  background: var(--primary);
-  transition: 0.5s ease;
-
-  /*--- hover GITHUB --  */
-
-  &.portfolio-box a i {
-    color: #e1e1e1;
-    scale: 1.2;
-  }
+.card .card_img {
+  width: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.portfolio-card {
-  width: 244px;
-  height: 146px;
-  border-radius: 2.5%;
+.card img {
+  width: 100%;
+  height: 204px;
 }
 
-.portfolio-card img {
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
   width: 100%;
   height: 100%;
-  border-radius: 2%;
-  scale: 1;
-  transition: all 0.5s;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.portfolio-card img:hover {
-  scale: 1.1;
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
 }
 
-.portfolio-box h2 {
-  font-size: var(--h2-font);
-  font-weight: 600;
-  margin: 10px 0;
+.card__title {
+  margin: 0;
+  font-size: 22px;
+  color: var(--bg-color);
+  font-weight: 700;
 }
 
-.portfolio-box p {
-  font-size: var(--p-font);
-  font-weight: 400;
-  text-align: justify;
+.card__description {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--bg-color);
+  line-height: 1.4;
 }
 
-.portfolio-box a {
+.card__content a {
   text-decoration: none;
+  position: relative;
+  left: 63px;
+  top: 26px;
+  margin: 10px;
 }
 
-.portfolio-box a i {
-  font-size: 35px;
-  color: var(--primary);
-  filter: drop-shadow(-3px 2px 3px #000);
-  position: relative;
-  top: 26px;
+.card__content a i {
+  text-align: center;
+  font-size: 28px;
+  color: #ff9900;
+  filter: drop-shadow(3px 3px 5px #000000);
+  border-radius: 50%;
+  margin: 10px;
   transition: all 0.3s;
 }
 
-.portfolio-box a i:hover {
-  color: var(--bg-color) !important;
-  filter: drop-shadow(5px 5px 2px #000);
+.card__content i:hover {
+  color: var(--bg-color);
+  filter: drop-shadow(5px 5px 2px #000000);
+  scale: 1.2;
 }
 
 /*-------------------------- Fin Portfolio -----------------------*/
@@ -563,6 +688,7 @@ header .navbar a:hover {
 .img-gif {
   width: 100%;
   height: 100%;
+  filter: drop-shadow(10px 18px 16px #ffae00);
 }
 
 .copyright {
@@ -609,11 +735,7 @@ header .navbar a:hover {
     width: 278px;
   }
 
-  .skills-educ {
-    width: 239px;
-    margin: 0px 17px 39px 5px;
-    transition: all .5s;
-  }
+  /*--------------------------Skills-----------------------*/
 
   .social {
     left: 31px;
@@ -633,6 +755,17 @@ header .navbar a:hover {
 
   .about-img {
     margin-bottom: 99px;
+  }
+
+  .portfolio_Cont {
+    height: 490px;
+    margin: 20px;
+  }
+
+  .portfolio_Cont {
+    width: 121%;
+    position: relative;
+    right: 108px;
   }
 }
 
@@ -680,6 +813,9 @@ header .navbar a:hover {
   .home-text {
     width: 510px;
   }
+  .glitch {
+    font-size: 25px;
+  }
 
   .about-img img {
     width: 100%;
@@ -700,6 +836,17 @@ header .navbar a:hover {
   }
   .heading h2 {
     margin-top: -35px;
+  }
+
+  .skills-box .box_span {
+    width: 121px;
+  }
+
+  .skills-content .card {
+    max-width: 279px;
+  }
+  .portfolio_Cont {
+    right: 69px;
   }
 }
 
@@ -725,29 +872,20 @@ header .navbar a:hover {
     border-radius: 3px;
   }
 
-  .home-text h1 {
-    font-size: 1.5rem;
-    background: linear-gradient(90deg, #ff9900 0%, #000000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .home-text h2 {
-    font-size: 1.1rem;
-    background: linear-gradient(90deg, #ff9900 0%, #000000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
   .home-text p {
     margin-top: 9px;
     text-align: center;
-    font-size: 1rem;
-    color: var(--hover);
+    font-size: 15px;
+    color: var(--bg-color);
   }
 
   .about-img img {
     width: 20rem;
+  }
+
+  .about-text {
+    position: relative;
+    left: -37px;
   }
 
   .about-text p {
@@ -766,6 +904,8 @@ header .navbar a:hover {
 
   .about-img {
     width: 80%;
+    position: relative;
+    left: -37px;
   }
 
   .skills-conte {
@@ -776,38 +916,11 @@ header .navbar a:hover {
     width: 433px;
   }
 
-  .skills-educ {
-    width: 310px;
-    height: 161px;
-    margin: 6px 0px 37px 0px;
-  }
-
-  .skills-educ::after {
-    width: 271px;
-  }
-
-  .skills-educ h2 {
-    font-weight: 400;
-    font-size: 18px;
-  }
-
-  .skills-educ h3 {
-    font-size: 13px;
-  }
-
-  .skills-educ p {
-    font-size: 16px;
-  }
-
-  .portfolio {
-    margin-top: 76px;
-  }
-
-  .portfolio-box p {
-    text-align: left;
-  }
   .heading {
-    margin-top: 9px;
+    margin-top: 19px;
+  }
+  .headPROJ {
+    margin-top: 144px;
   }
 
   .info-box {
@@ -825,6 +938,13 @@ header .navbar a:hover {
   .contact-gif {
     width: 278px;
     margin: 33px 0px 0px 65px;
+  }
+
+  .portfolio_Cont {
+    height: 731px;
+    width: 100%;
+    position: relative;
+    right: 20px;
   }
 }
 
@@ -853,8 +973,21 @@ header .navbar a:hover {
     min-height: 100vh;
   }
 
+  .glitch {
+    font-size: 20px;
+  }
+
+  .home-text p {
+    font-size: 14px;
+  }
+
+  .about-text {
+    left: -76px;
+  }
+
   .about-img {
     width: 21rem;
+    left: -67px;
   }
   .about-img img {
     width: 21rem;
@@ -896,10 +1029,16 @@ header .navbar a:hover {
     width: 21rem;
   }
 
-  .skills-educ {
-    width: 263px;
+  .heading h2 {
+    margin-top: 83px;
+  }
+
+  .portfolio_Cont {
+    margin: 0px;
+    height: 731px;
+    width: 143%;
     position: relative;
-    right: 15px;
+    right: 53px;
   }
 
   .contact-content {
@@ -941,11 +1080,19 @@ header .navbar a:hover {
     margin-left: 17px;
   }
 
+  .portfolio_Cont {
+    right: 71px;
+  }
+
   .contact-content {
     right: 107px;
   }
 
   .contact-content {
     right: 60px;
+  }
+
+  .about-img {
+    left: -79px;
   }
 }
